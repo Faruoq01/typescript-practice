@@ -16,3 +16,8 @@ const array = [1, 2, 2, 3, 4, 4, 5];
 const uniqueArray = makeUnique(array);
 console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
 
+const nameLists: string[] = ["Malik", "Faruk", "John", "Fatima", "Jerry", "Glad"];
+const order = nameLists.sort((a: string, b: string) => {
+    return a.localeCompare(b);
+});
+console.log(order)
